@@ -206,7 +206,7 @@ input[type=radio] {
     cursor: pointer;
     border: 1px solid transparent;
     border-radius: 4px;
-    background: #C61C6F;
+    background: #C61C6F;br
     color: white;
     background-color: #2D8BCF;
     background-size: 18px 18px;
@@ -439,7 +439,7 @@ ul.awardslist li .award {
 
 nav {
   width: 100%;
-  background: #fff;
+  background: #30226B;
   box-shadow: 0 1px 1px rgba(0,0,0,.1);
 }
 
@@ -452,7 +452,7 @@ nav {
   width: 80%;
   font-size: 1.6em;
   text-align: left;
-  color: #1B7998;
+  color: #ECF4F7;
   text-decoration: none;
   text-align: left;
 }
@@ -625,10 +625,15 @@ input.ng-valid.ng-touched {
 }
 
 .ng-invalid .btn {
-  background: gray;
+  background: #A71111;
 }
 
 .error {
   color: red;
   padding-bottom: 10px;
+}
+
+.btn:hover {
+   background-color:  #30226B;
+   color: black !important;
 }
