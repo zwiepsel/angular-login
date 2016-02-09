@@ -1,6 +1,6 @@
 var myApp = angular.module('myApp',['ngRoute']);
 
-myApp.config(['$routeProvider'], function($routeProvider){
+myApp.config(['$routeProvider', function($routeProvider){
     
     $routeProvider.
         when('/login', {
@@ -12,11 +12,11 @@ myApp.config(['$routeProvider'], function($routeProvider){
             controller: 'RegistrationController'
         }).
         when('/success', {
-            templateUrl: 'views/success/html',
-            controller: 'SuccesController'
+            templateUrl: 'views/success.html',
+            controller: 'SuccessController'
         }).
         otherwise({
             redirectTo:'/login'
         });
-});
+}]);
 
