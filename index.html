@@ -9,7 +9,10 @@
   <script src="js/lib/angular/angular.min.js"></script>
   <script src="js/lib/angular/angular-route.min.js"></script>
   <script src="js/lib/angular/angular-animate.min.js"></script>
+  <script src="js/lib/firebase/firebase.js"></script>
+  <script src="js/lib/firebase/angularfire.min.js"></script>
   <script src="js/app.js"></script>
+  <script src="js/services/authentication.js"></script>
   <script src="js/controllers/registration.js"></script>
   <script src="js/controllers/success.js"></script>
 </head>
@@ -18,6 +21,9 @@
     <nav class="cf" ng-include="'views/nav.html'"></nav>
 </header>
 <div class="page">
+    <div class="userinfo" ng-show="currentUser">
+        <span class="userinfo">Hi {{ currentUser.firstname }}</span>
+    </div>
   <main class="cf" ng-view>     
   </main>
 </div>
